@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  background-image: url(../img/Frame\ 1261155500.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.scroll-top {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  position: fixed;
+}
+
+.display-5 {
+  font-family: "Playfair Display", serif;
+}
+
+.big {
+  font-size: 80px;
+}
+
+/* Navbar Transparente */
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar Sólida ao Scroll */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Centraliza os itens do Navbar */
+.navbar-nav {
+  margin: 0 auto;
+}
+
+/* Estilo dos Links */
+.nav-link {
+  color: white !important;
+  font-weight: 200;
+  margin: 0 8px;
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.ban {
+  margin-top: 10rem !important;
+}
+
+.title-badge {
+  border-radius: 100px !important;
+}
+
+.title-badge2 {
+  border-radius: 100px !important;
+}
+
+.title-badge::before {
+  content: "<i class=" fa-solid fa-circle "></i>";
+  /* background: #fff;
+    padding: 0px 6.5px;
+    border-radius: 50%;
+    margin-right: 5px; */
+}
+
+.title-badge2::before {
+  content: "<i class=" fas fa-circle "></i>";
+  background: #040731;
+  /* padding: 0px 6.5px;
+    border-radius: 50%;
+    margin-right: 5px; */
+}
+
+/* Estilo do container do texto */
+.typewriter-container {
+  font-family: "Courier New", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Cursor piscante */
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #333;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Estilo da seção */
+.skills-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+/* Container da progress bar */
+.progress-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo da barra de progresso */
+.progress-item {
+  margin-bottom: 25px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 5px;
+  transition: width 1.5s ease-out;
+}
